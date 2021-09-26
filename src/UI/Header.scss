@@ -1,0 +1,82 @@
+.header {
+  height: 6rem;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    width: 10rem;
+    object-fit: contain;
+    margin: 0 2rem;
+    margin-top: 1.5rem;
+  }
+
+  &__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 2rem;
+
+    &-input {
+      height: 1rem;
+      padding: 1rem;
+      border: none;
+      width: 100%;
+    }
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      height: 2rem;
+      background-color: #cd9042;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+
+    &-one {
+      font-size: 1.1rem;
+    }
+
+    &-two {
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+
+    &-cart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-cart-icon {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    &-count {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      color: white;
+    }
+  }
+}
+
+// font awesome
