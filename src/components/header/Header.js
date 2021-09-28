@@ -1,15 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
+// context
+import { useStateValue } from "../../store/StateProvider";
+
+// css
 import "./Header.css";
 
 function Header() {
+  const [state, action] = useStateValue();
   return (
     <div className="header">
-      <img
-        src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-        alt="amazon logo"
-        className="header__logo"
-      />
+      <Link to="/">
+        <img
+          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          alt="amazon logo"
+          className="header__logo"
+        />
+      </Link>
       <div className="header__search">
         <input type="text" className="header__search-input" />
         <div className="header__search-icon">
@@ -30,12 +38,16 @@ function Header() {
           <span className="header__option-one">Your</span>
           <span className="header__option-two">Prime</span>
         </div>
-        <div className="header__option-cart">
-          <div className="header__option-cart-icon">
-            <i class="fas fa-shopping-cart "></i>
+        <Link to="/checkout">
+          <div className="header__option-cart">
+            <div className="header__option-cart-icon">
+              <i class="fas fa-shopping-cart "></i>
+            </div>
+            <span className="header__option-two header__option-count">
+              {state.totalAmount}
+            </span>
           </div>
-          <span className="header__option-two header__option-count">0</span>
-        </div>
+        </Link>
       </div>
     </div>
   );

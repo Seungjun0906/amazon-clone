@@ -1,0 +1,45 @@
+.item {
+  display: flex;
+  align-items: center;
+
+  &__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  &__detail {
+    padding: 2rem;
+
+    & button {
+      background-color: #f0c14b;
+      border: 1px solid;
+      border-color: #a88734 #9c7e31 #846a29;
+      border-radius: 2px;
+      padding: 2px;
+      color: black;
+    }
+  }
+
+  &__img {
+    height: 21rem;
+    width: 18rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.5rem;
+  }
+
+  &__price {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &__rating {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}

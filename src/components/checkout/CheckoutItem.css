@@ -1,0 +1,56 @@
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item__img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.item__detail {
+  padding: 2rem;
+}
+
+.item__detail button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 2px;
+  padding: 2px;
+  color: black;
+}
+
+.item__img {
+  height: 21rem;
+  width: 18rem;
+}
+
+.item__title {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+}
+
+.item__price {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.item__rating {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=CheckoutItem.css.map */
