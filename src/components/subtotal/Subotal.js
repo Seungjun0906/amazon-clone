@@ -16,7 +16,7 @@ function Subtotal() {
         renderText={(value) => (
           <>
             <p>
-              Subtotal ({state.totalAmount} items): <strong>{value}</strong>
+              Subtotal ({state.totalQuantiy} items): <strong>{value}</strong>
             </p>
             <small className="subtotal__gift">
               <input type="checkbox" /> <span>This order contains a gift</span>

@@ -1,5 +1,8 @@
 import React from "react";
 
+// context
+import { useStateValue } from "../../store/StateProvider";
+
 // css
 import "./Checkout.css";
 // components
@@ -7,6 +10,7 @@ import Subtotal from "../subtotal/Subotal";
 import CheckoutItemList from "./CheckoutItemList";
 
 function Checkout(props) {
+  const [state, dispatch] = useStateValue();
   return (
     <div className="checkout">
       <div className="checkout__left">
@@ -17,6 +21,7 @@ function Checkout(props) {
         />
 
         <div>
+          <h3>{state.user?.email}</h3>
           <h2 className="checkout__title">Your shopping Basket</h2>
         </div>
         <CheckoutItemList />

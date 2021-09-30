@@ -25,6 +25,7 @@
   &__img {
     height: 21rem;
     width: 18rem;
+    object-fit: contain;
   }
 
   &__title {
@@ -42,4 +43,21 @@
     font-size: 2rem;
     margin-bottom: 1rem;
   }
+
+  // &__quantity {
+  //   display: flex;
+  //   align-items: center;
+  //   margin-top: 1rem;
+  //   padding-left: 1rem;
+
+  //   & label {
+  //     font-size: 1.4rem;
+  //     font-weight: 600;
+  //   }
+
+  //   & select {
+  //     padding: 0.3rem;
+  //     margin-left: 1rem;
+  //   }
+  // }
 }

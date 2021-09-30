@@ -1,7 +1,7 @@
 import React from "react";
 
 // components
-import Product from "./products/Product";
+import Product from "../../components/products/Product";
 
 // CSS
 import "./Home.css";

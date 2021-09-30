@@ -11,11 +11,11 @@ import CheckoutItem from "./CheckoutItem";
 function CheckoutItemList() {
   const [{ cartItems }, dispatch] = useStateValue();
   return (
-    <>
+    <ul>
       {cartItems.map((item) => (
         <CheckoutItem key={item.id} item={item} />
       ))}
-    </>
+    </ul>
   );
 }
 
