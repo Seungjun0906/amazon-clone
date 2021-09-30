@@ -29,7 +29,7 @@ function Header() {
       <div className="header__search">
         <input type="text" className="header__search-input" />
         <div className="header__search-icon">
-          <i class="fas fa-search"></i>
+          <i className="fas fa-search"></i>
         </div>
       </div>
 
@@ -53,10 +53,10 @@ function Header() {
         <Link to="/checkout" style={{ textDecoration: "none" }}>
           <div className="header__option-cart">
             <div className="header__option-cart-icon">
-              <i class="fas fa-shopping-cart "></i>
+              <i className="fas fa-shopping-cart "></i>
             </div>
             <span className="header__option-two header__option-count">
-              {state.totalQuantity}
+              {state.cartItems?.length}
             </span>
           </div>
         </Link>

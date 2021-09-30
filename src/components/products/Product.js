@@ -34,7 +34,7 @@ function Product(props) {
           {Array(props.rating)
             .fill()
             .map((_, i) => (
-              <span>⭐</span>
+              <span key={Math.random()}>⭐</span>
             ))}
         </div>
       </div>

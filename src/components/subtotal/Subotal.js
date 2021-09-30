@@ -3,6 +3,7 @@ import CurrencyFormat from "react-currency-format";
 
 // Context
 import { useStateValue } from "../../store/StateProvider";
+import { getTotalAmount } from "../../store/reducer";
 
 // css
 import "./Subtotal.css";
@@ -16,7 +17,8 @@ function Subtotal() {
         renderText={(value) => (
           <>
             <p>
-              Subtotal ({state.totalQuantiy} items): <strong>{value}</strong>
+              Subtotal ({state.cartItems.length} items):{" "}
+              <strong>{value}</strong>
             </p>
             <small className="subtotal__gift">
               <input type="checkbox" /> <span>This order contains a gift</span>
@@ -24,7 +26,7 @@ function Subtotal() {
           </>
         )}
         decimalScale={2}
-        value={state.totalPrice}
+        value={getTotalAmount(state.cartItems)}
         displayType={"text"}
         thousandSeparator={true}
         prefix={"$"}
